@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #eee;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  z-index: 2;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #b46eff;
+}
+
+.love-message {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.photo-frame {
+  margin: 2rem auto;
+  border: 4px solid #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 90%;
+  width: 300px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  z-index: 1;
+  position: relative;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+
+.background-flower {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.07;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.flower-left {
+  background-image: url('heart.png');
+  width: 300px;
+  height: 300px;
+  bottom: 0;
+  left: 0;
+  transform: rotate(-15deg);
+  position: fixed;
+}
+
+.flower-center {
+  background-image: url('heart.png');
+  width: 700px;
+  height: 700px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(20deg);
+  position: fixed;
+}
+
+.flower-right {
+  background-image: url('heart.png');
+  width: 300px;
+  height: 300px;
+  bottom: 0;
+  right: 0;
+  transform: rotate(15deg);
+  position: fixed;
+}
+
+.falling-flower {
+  position: fixed;
+  top: -50px;
+  width: 30px;
+  height: 30px;
+  background-image: url('flower.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0;
+  animation: fall linear infinite;
+  pointer-events: none;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+
+.color {
+  color: #b46eff;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 auto;
+}

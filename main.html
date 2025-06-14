@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para a Garotinha mais Linda que Existe</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<script>
+  const createFlower = () => {
+    const flower = document.createElement('div');
+    flower.classList.add('falling-flower');
+    flower.style.left = Math.random() * 100 + 'vw';
+    flower.style.animationDuration = (Math.random() * 3 + 4) + 's';
+    flower.style.opacity = Math.random();
+    document.body.appendChild(flower);
+
+    setTimeout(() => {
+      flower.remove();
+    }, 8000);
+  };
+
+  setInterval(createFlower, 500);
+</script>
+
+<body>
+  <div class="background-flower flower-left"></div>
+  <div class="background-flower flower-center"></div>
+  <div class="background-flower flower-right"></div>
+
+  <main>
+    <audio id="bg-music" autoplay loop>
+      <source src="musica.mp3" type="audio/mpeg">
+    </audio>
+    
+    <div class="photo-frame">
+      <img src="love.jpg" alt="us">
+    </div>
+
+    <h1>💜 Feliz Dia dos Namorados 💜</h1>
+    <p class="love-message">
+      Meu amor, foi com você que entendi o que é amar de verdade: se entregar sem medo, confiar, cuidar com o coração
+      inteiro.<br>
+      Te digo que sempre estarei ao seu lado em cada passo do nosso caminho.<br>
+      Porque amar é isso somar, compartilhar experiências, caminhar juntos.<br>
+      Os dias ruins existem; os dias bons serão a meta; dias incríveis, as nossas surpresas; e dias tristes, a nossa
+      maior prova de amor.<br>
+      Eu amo tanto você, que eu poderia ir aos quatro cantos do mundo dizer que sou louco.<br>
+    </p>
+
+    <p class="color">Louco por você.</p>
+
+    <p class="love-message">
+      Ver você sorrindo por um momento é o suficiente para ser feliz uma vida inteira.<br>
+      Amo o seu olhar e como ele descreve você.<br>
+      Seus detalhes delicados, seu amor, seu carinho, sua profundidade, suas surpresas e sua alma.<br>
+      O mais engraçado do nosso amor foi que eu não precisei procurar.<br>
+      Bastou estar bem comigo mesmo, e então me apaixonei por você.<br>
+    </p>
+
+    <p class="color">Sua presença foi um presente, e assim te amei.</p>
+
+    <div class="photo-frame">
+      <img src="love.jpg" alt="us">
+    </div>
+
+    <p class="love-message">
+      Eu poderia simplesmente dizer que te amo.<br>
+      Mas prefiro mostrar, em detalhes, o quanto você significa para mim.<br>
+      Preferi que cada poema, cada texto, cada ação, cada presente e cada momento dissesse isso.<br>
+      Dizer que tive muita sorte de ter encontrado você em meio a tantos desencontros.<br>
+      De te dizer que o teu abraço é o meu lugar.<br>
+      Prefiro deixar que minhas ações mostrem que, só de você segurar a minha mão,<br>
+      o mundo ao redor se acalma.<br>
+      Que é no teu olhar que eu encontro paz, amor e alegria genuínas.<br>
+      Eu não quero apenas dizer que te amo.<br>
+      Quero te dizer que você é tudo o que há de melhor em mim.<br>
+      É o milagre em dias comuns, a calmaria na tempestade, o conforto em meio a espinhos.<br>
+      Se eu te amo? Com certeza sim, eu te amo.<br>
+      Mas, mais do que apenas isso,
+    </p>
+
+    <p class="color">eu escolho você todos os dias.</p>
+
+    <div class="photo-frame">
+      <img src="love.jpg" alt="us">
+    </div>
+
+    <p class="color">Nesses um ano e sete meses juntos</p>
+
+    <p class="love-message">
+      Eu amei você da forma mais sincera.<br>
+      Ver você sendo você, e amando sua coragem, sua existência, sua bagunça, sua tentativa.<br>
+      E, Deus, como é bonito poder ver você.<br>
+      Meu bem, pretendo ser o seu último encontro no dia,<br>
+      e não o seu último amor.<br>
+      Esse título eu deixarei para o presente que quero compartilhar contigo.<br>
+      Ele carregará nossos nomes por várias e várias gerações. E então, sim:<br>
+      essa será a primeira vez que seremos imortais.
+    </p>
+
+  </main>
+</body>
+
+</html>
